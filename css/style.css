@@ -28,6 +28,18 @@ li {
   color: #304960;
 }
 
-#eventr {
+#banner{
+  max-height: 485px;
+}
+
+/*#eventr {
   height: 137px;
+}*/
+
+img#headshot {
+  max-height: 200px;
+}
+
+#work li{
+  text-align: center;
 }
