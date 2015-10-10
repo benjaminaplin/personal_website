@@ -46,6 +46,10 @@ img#headshot {
   min-height: 64.2px;
 }
 
+#work {
+  table-layout: fixed;
+}
+
 #work li{
   text-align: center;
 }
@@ -66,17 +70,33 @@ i.fa {
   margin: 0px 0px 10px 15px;
 } 
 
+.web-dev {
+  color: grey;
+  margin-left: 15px;
+}
+
+#name {
+  color: black;
+}
+
+#pipe {
+  margin-left: 5px;
+  color: black;
+}
+
 footer {
   height: 20px;
   margin-top: 25px;
 }
-/*"If [device width] is greater than or equal to [specified #], then do {...}" */
+
+/*MIN-WIDTH: "If [device width] is greater than or equal to [specified #], then do {...}" */
 @media only screen and (min-width: 1025px)  {
   #eventr {
     height: 180px;
   }
 
 }
+/*MAX-WIDTH: "If [device width] is less than or equal to [specified #], then do {...}*/
 
 @media only screen and (max-width: 1024px)  {
 
@@ -97,4 +117,19 @@ footer {
 
 }
 
+/*MAX-WIDTH: "If [device width] is less than or equal to [specified #], then do {...}*/
 
+@media only screen and (max-width: 400px)  {
+
+  h1 {
+    color: red;
+  }
+
+  #pipe {
+    display: none;
+  }
+
+  span.web-dev {
+    margin-left: 0px;
+  }
+}
