@@ -18,56 +18,60 @@
 
 </head>
   <body>
+        <div class="row">
+          
+          <div id="banner" class="large-12 columns">
+            <div class="name-header not-mobile-name">
+              <h1>
+                <span class="name">BENJAMIN APLIN</span> <span class="pipe">|</span><span class="web-dev">WEB DEVELOPER</span>
+              </h1>
+            </div>
+            
+            <div class="name-header mobile-name">
+              <h1 class="name">BENJAMIN APLIN</h1>
+              <h1 class="web-dev">WEB DEVELOPER</h1>
+            </div>
+          
+        </div>
+
+        </div><!--large-12 columns-->
     <div class="row">
-      <div class="large-12 columns">
-      <div class="nav-bar right">
-      </div>
-      <h1><span id="name">BENJAMIN APLIN</span> <span id="pipe">|</span><span class="web-dev">WEB DEVELOPER</span></h1>
-      
-      <hr/>
-      </div>
-    </div><!--row-->
-    <div class="row">
-      <div class="large-12 columns">
-      <img id="banner" src="./assets/banner.jpg">
-      </div>
-    </div><!--row-->
-    <div class="row">
-      <hr>
         <div class="large-8 columns">
-          <h4>ABOUT</h4>
-          <p>I am a Brooklyn-based web developer with a passion for creating things. I take great personal pride in building beautiful, functional, and high-performing web applications. I have experience constructing full-stack applications using Node, Express, Backbone, MongoDb, Rails, D3.js and other technologies built with Javascript and Ruby.</p>
+          <h4 id="about">ABOUT</h4>
+          <p>I am a Brooklyn-based web developer with a passion for creating things. I take great personal pride in building beautiful, functional, and high-performing web applications. I have experience working with Node, Express, Backbone, MongoDb, Rails, D3.js and other technologies built with Javascript and Ruby. </p>
           <i class="fi-social-twitter"></i>
         </div>
         <div class="large-4 columns">
           <img id="headshot" src="./assets/headshot.jpg">
         </div><!--large-4 columns-->
     </div><!--row-->
+
     <div class="row">
-    <hr>
+      <hr>
+      <h4 id="work" >WORK</h4>
+      <div class="large-4 columns">
 
-  <div class="row">
-    <h4 id="work" >WORK</h4>
-    <div class="large-4 columns">
-
-      <a target="_blank" href="https://blooming-harbor-4766.herokuapp.com/">
-        <img src="./assets/politics_site.png">
-      </a>  
-      <h5>Real-time Political Fundraising Using D3.js</h5>
-      <p>While working in communications and marketing at international non-profits, I realized the power of data visualization. As a result I was eager to try D3.js, a javascript data visualization library. This site pulls real-time data from the <a  target="_blank" href="https://api.open.fec.gov/developers">Federal Election Commission's API </a> and the <a  target="_blank" href="http://sunlightfoundation.com/api/">Sunlight Foundation's API</a> rendering the realtime fundraising results using D3.js. Other technologies used in this project include Node, Express and Foundation CSS.</p>
-    </div>
-    <div class="large-4 columns">
-      <a target="_blank"  href="https://eventer999.herokuapp.com/events"><img id="eventr" src="assets/eventer.png"></a>
-      <h5>Eventr - Live Music Nearby Right Now </h5>
-      <p>I worked in a team of four to produce an app we called Eventr, an application showing a dynamic map of concerts nearby the user that are happening that day. Collaborating using Git and Github, we built a Ruby on Rails application that enabled users to view music events around them using geolocation, see details on individual events, and save them to their profile. We used APIs including Google Maps and Spotify to provide dynamic, up-to-the-minute content for the site.</p>
-    </div>
-    <div class="large-4 columns">
-      <a  target="_blank" href="./gallery.html"><img src="./assets/art_site.png"></a>
-      <h5>Benjamin Aplin Art</h5>
-      <p>An interactive gallery of paintings that allow the user to sort paintings by year and type, and view individually in slide-show format. A responsive front-end application that showcases a gallery of artwork using Javascript, JQuery, HTML and CSS. Used Javascript Plug-ins Isotope and Fancybox to make gallery sortable, interactive, responsive and viewable in slideshow format.
-      </p>
-    </div>
-  </div><!--row-->
+        <a target="_blank" href="https://blooming-harbor-4766.herokuapp.com/">
+          <img src="./assets/politics_site.png">
+        </a>  
+        <h5>Real-time Political Fundraising Using D3.js</h5>
+        <p>While working in communications and marketing at international non-profits, I realized the power of data visualization. As a result I was excited to work with D3.js, a javascript data visualization library. This site pulls real-time data from the <a  target="_blank" href="https://api.open.fec.gov/developers">Federal Election Commission's API </a> and the <a  target="_blank" href="http://sunlightfoundation.com/api/">Sunlight Foundation's API</a>, rendering the realtime fundraising results using D3.js, Node, Express and Foundation CSS.</p>
+        <hr class="mobile-line">
+      </div>
+      <div class="large-4 columns">
+        <a target="_blank"  href="https://eventer999.herokuapp.com/events"><img id="eventr" src="assets/eventer.png"></a>
+        <h5>Eventr - Live Music Nearby, Right Now </h5>
+        <p>I worked in a team of four to produce an app we called Eventr, an application showing a dynamic map of concerts nearby the user that are happening that day. Collaborating using Git and Github, we built a Ruby on Rails application that enabled users to view music events around them using geolocation, see details on individual events, and save them to their profile. We used APIs including Google Maps and Spotify to provide dynamic, up-to-the-minute content for the site.</p>
+        <hr class="mobile-line">
+      </div>
+      <div class="large-4 columns">
+        <a  target="_blank" href="./gallery.html"><img src="./assets/art_site.png"></a>
+        <h5>Benjamin Aplin Art</h5>
+        <p>I created a responsive gallery of my paintings that allow the user to sort paintings by year and type, and view them individually in a slide-show format. In addition to Javascript, JQuery, HTML and CSS, I used Javascript Plug-ins Isotope and Fancybox. Isotope makes the gallery sortable and responsive, while Fancybox makes the images viewable in a slideshow.
+        </p>
+        <hr class="mobile-line">
+      </div>
+    </div><!--row-->
 
 
     <div class="not-mobile">
@@ -107,7 +111,7 @@
 
     <div class="mobile">
         <div class="row"><!--row-->
-          <h4>Contact Me</h4>  
+          <h4>CONTACT ME</h4>  
           <div class="small-2 columns"><i class="fa fa-envelope"></i></div>
           <div class="small-10 columns">benjaminaplin@gmail.com</div>
         </div><!--row-->

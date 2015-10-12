@@ -1,3 +1,61 @@
+h4 {
+  padding-bottom: 24px;
+}
+
+div#banner {
+/*  border: 1px solid green;*/
+  position: relative;
+  height: 325px;
+  width: 100%;
+  background-image: url("../assets/banner.jpg");
+  margin-bottom: 25px;
+}
+
+div.large-4:nth-child(5) h5 {
+  padding-bottom: 15px;
+}
+
+.large-3.small-3.columns {
+    text-align: center;
+}
+
+.large-3.small-3.columns:nth-child(1) {
+  padding-left: 60px
+}
+
+.large-3.small-3.columns:nth-child(2) {
+  padding-left: 30px
+}
+
+.large-3.small-3.columns:nth-child(3) {
+  padding-left: 17px
+}
+
+.name-header{
+/*  border: 1px solid red;*/
+  margin: 0 auto;
+  width:100%;
+  height:20%;
+  z-index: 1;
+  position: relative;
+  top: 75px;
+}
+
+.name, .web-dev {
+  padding-left: 15px;
+  width: 100%;
+  margin: 0px auto;
+  letter-spacing: 6px;
+}
+
+.web-dev {
+  color: grey;
+}
+
+.name {
+  color: white;
+}
+
 body {
   background: #FFFFFF;
   color: #969694;
@@ -27,10 +85,6 @@ li {
   color: #304960;
 }
 
-#banner{
-  max-height: 485px;
-}
-
 img#headshot {
   max-height: 200px;
   margin: 0 auto;
@@ -42,7 +96,8 @@ img#headshot {
 }
 
 #work {
-  table-layout: fixed;
+  margin-left: 22px;
+
 }
 
 #work li{
@@ -57,6 +112,14 @@ img#headshot {
   display: none;
 }
 
+.not-mobile-name {
+  display: block;
+}
+
+.mobile-name {
+  display: none;
+}
+
 .contact {
   border: solid black 1px;
 }
@@ -65,31 +128,18 @@ i.fa {
   margin: 0px 0px 10px 15px;
 } 
 
-.web-dev {
-  color: grey;
-  margin-left: 15px;
-}
 
-#work{
-  margin-left: 22px;
-}
-
-#name {
-  color: black;
-}
-
-#pipe {
-  margin-left: 5px;
-  color: black;
-}
-
-img {
-
+.pipe {
+  color: #CAEF86;
 }
 
 footer {
   height: 20px;
   margin-top: 25px;
+}
+
+.mobile-line {
+  display: none;
 }
 
 /*MIN-WIDTH: "If [device width] is greater than or equal to [specified #], then do {...}" */
@@ -102,6 +152,10 @@ footer {
 /*MAX-WIDTH: "If [device width] is less than or equal to [specified #], then do {...}*/
 
 @media only screen and (max-width: 1024px)  {
+
+  #about {
+    margin-top: 25px;
+  }
 
   .mobile {
     display: block;
@@ -122,17 +176,53 @@ footer {
 
 /*MAX-WIDTH: "If [device width] is less than or equal to [specified #], then do {...}*/
 
-@media only screen and (max-width: 400px)  {
-
-  h1 {
-    color: red;
+@media only screen and (max-width: 1080px)  {
+  
+  .pipe {
+    display: none;
   }
-
-  #pipe {
+  .mobile-name {
+    display: block;
+  }
+  .not-mobile-name {
     display: none;
   }
 
-  span.web-dev {
-    margin-left: 0px;
+}
+
+@media only screen and (max-width: 430px)  {
+
+  
+  div#banner {
+    height: 205px;
+  }
+
+  .name-header {
+    top: 10px;
+    margin: 0 auto;
+  }
+
+  h1.name h1.web-dev{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.85em;
+  }
+
+  h1.name {
+    
+    color: black;
+  }
+
+
+  h1.web-dev {
+    color: darkgrey;
+  }
+}
+
+@media only screen and (min-width: 1240px) {
+  div#banner {
+/*  border: 1px solid green;*/
+/*    width: 60%;
+    margin: 0 auto;*/
   }
 }
