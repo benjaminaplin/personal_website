@@ -22,9 +22,18 @@
   <script src="js/picturefill.min.js" async></script>
 </head>
   <body>
-        <div class="row">
-          
-          <div id="banner" class="large-12 columns">
+      <div class="row">
+         <div class="large-12 columns">
+           <div id="banner">
+            <img 
+              src="assets/banner.jpg" 
+              alt="city streets at night"
+              srcset="assets/banner_small_480.jpg 480w,
+                      assets/banner_medium_960.jpg 960w,
+                      assets/banner_large_1455.jpg, 1455w,
+                      assets/banner_xlarge_1600.jpg, 1600w"
+            >
+           </div> 
             <div class="name-header not-mobile-name">
               <h1>
                 <span class="name">BENJAMIN APLIN</span> <span class="pipe">|</span><span class="web-dev">WEB DEVELOPER</span>
@@ -35,10 +44,9 @@
               <h1 class="name">BENJAMIN APLIN</h1>
               <h1 class="web-dev">WEB DEVELOPER</h1>
             </div>
-          
-        </div>
+        </div><!--row-->
 
-        </div><!--large-12 columns-->
+         </div> <!--large-12 columns-->
     <div class="row">
         <div class="large-8 columns">
           <h4 id="about">ABOUT</h4>

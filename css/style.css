@@ -2,13 +2,27 @@ h4 {
   padding-bottom: 24px;
 }
 
-div#banner {
-/*  border: 1px solid green;*/
-  position: relative;
-  height: 325px;
+#banner img{
+  -webkit-filter: opacity(0.7);
+  z-index: -12;
+  min-width: 480px
+}
+
+.name-header{
+  margin: 0 auto;
   width: 100%;
-  background-image: url("../assets/banner.jpg");
-  margin-bottom: 25px;
+  height: 20%;
+  position: absolute;
+  bottom: 187px;
+  padding-left: 12px;
+}
+
+.web-dev {
+  color: black;
+}
+
+.name {
+  color: white;
 }
 
 div.large-4:nth-child(5) h5 {
@@ -16,12 +30,12 @@ div.large-4:nth-child(5) h5 {
 }
 
 a img {
-  box-shadow: 10px 10px 5px #888888;
+ box-shadow:  5px 5px 20px #888888;
   margin-bottom: 15px;
 }
 
 .large-3.small-3.columns {
-    text-align: center;
+  text-align: center;
 }
 
 .large-3.small-3.columns:nth-child(1) {
@@ -35,30 +49,11 @@ a img {
 .large-3.small-3.columns:nth-child(3) {
   padding-left: 17px
 }
-
-.name-header{
-/*  border: 1px solid red;*/
-  margin: 0 auto;
-  width:100%;
-  height:20%;
-  z-index: 1;
-  position: relative;
-  top: 75px;
-}
-
 .name, .web-dev {
   padding-left: 15px;
   width: 100%;
   margin: 0px auto;
   letter-spacing: 6px;
-}
-
-.web-dev {
-  color: grey;
-}
-
-.name {
-  color: white;
 }
 
 body {
@@ -133,7 +128,6 @@ i.fa {
   margin: 0px 0px 10px 15px;
 } 
 
-
 .pipe {
   color: #CAEF86;
 }
@@ -145,6 +139,10 @@ footer {
 
 .mobile-line {
   display: none;
+}
+
+#about {
+  padding-top: 10px;
 }
 
 /*MIN-WIDTH: "If [device width] is greater than or equal to [specified #], then do {...}" */
@@ -165,6 +163,7 @@ footer {
   .mobile {
     display: block;
   }
+
   .not-mobile {
     display: none;
   }
@@ -181,7 +180,7 @@ footer {
 
 /*MAX-WIDTH: "If [device width] is less than or equal to [specified #], then do {...}*/
 
-@media only screen and (max-width: 1080px)  {
+@media only screen and (max-width: 999px)  {
   
   .pipe {
     display: none;
@@ -197,11 +196,6 @@ footer {
 
 @media only screen and (max-width: 430px)  {
 
-  
-  div#banner {
-    height: 205px;
-  }
-
   .name-header {
     top: 10px;
     margin: 0 auto;
@@ -214,20 +208,15 @@ footer {
   }
 
   h1.name {
-    
     color: black;
   }
 
 
   h1.web-dev {
-    color: darkgrey;
+    color: white;
   }
 }
 
 @media only screen and (min-width: 1240px) {
-  div#banner {
-/*  border: 1px solid green;*/
-/*    width: 60%;
-    margin: 0 auto;*/
-  }
+
 }
