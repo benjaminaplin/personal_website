@@ -3,26 +3,30 @@ h4 {
 }
 
 #banner img{
-  -webkit-filter: opacity(0.7);
+  opacity: 0.6;
   z-index: -12;
-  min-width: 480px
+
 }
 
 .name-header{
   margin: 0 auto;
-  width: 100%;
+  width: 95%;
   height: 20%;
   position: absolute;
-  bottom: 187px;
-  padding-left: 12px;
+  bottom: 164px;
+}
+
+.name-header h1{
+  margin: 0 auto;
+  width: 95%;
 }
 
 .web-dev {
-  color: black;
+  color: #36363a;
 }
 
 .name {
-  color: white;
+  color: black;
 }
 
 div.large-4:nth-child(5) h5 {
@@ -30,7 +34,6 @@ div.large-4:nth-child(5) h5 {
 }
 
 a img {
- box-shadow:  5px 5px 20px #888888;
   margin-bottom: 15px;
 }
 
@@ -50,10 +53,11 @@ a img {
   padding-left: 17px
 }
 .name, .web-dev {
-  padding-left: 15px;
-  width: 100%;
-  margin: 0px auto;
-  letter-spacing: 6px;
+    width: 95%;
+    margin: 0px auto;
+    letter-spacing: 6px;
+    font-size: 41px;
+    padding-left: 20px;
 }
 
 body {
@@ -180,40 +184,68 @@ footer {
 
 /*MAX-WIDTH: "If [device width] is less than or equal to [specified #], then do {...}*/
 
-@media only screen and (max-width: 999px)  {
+@media only screen and (max-width: 990px)  {
   
-  .pipe {
-    display: none;
+  .name-header {
+    padding-left: 10px;
+        text-align: center;
+
   }
-  .mobile-name {
-    display: block;
-  }
-  .not-mobile-name {
-    display: none;
+  span.name, span.web-dev{
+    text-align: center;
+    font-size: 38px;
   }
 
 }
 
-@media only screen and (max-width: 430px)  {
-
-  .name-header {
-    top: 10px;
-    margin: 0 auto;
+@media only screen and (max-width: 989px)  {
+    .pipe {
+    display: none;
   }
 
-  h1.name h1.web-dev{
+  .name-header{
     margin: 0 auto;
+        text-align: center;
+
+  }
+  
+  span.name, span.web-dev{
+    color: red;
     text-align: center;
-    font-size: 1.85em;
+  }
+
+  .mobile-name {
+    display: block;
+  }
+  
+  .not-mobile-name {
+    display: none;
+  }
+}
+
+
+@media only screen and (max-width: 554px)  {
+
+  .name-header {
+    top: 22px;
+    margin: 0 auto;
+    width: 96%;
+    padding-right: 25px;
+  }
+
+  h1.name, h1.web-dev{
+    text-align: center;
+    font-size: 1.7em;
+    font-weight: 500;
   }
 
   h1.name {
     color: black;
+
   }
 
-
   h1.web-dev {
-    color: white;
+    color: #36363a;
   }
 }
 
