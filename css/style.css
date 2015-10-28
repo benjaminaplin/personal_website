@@ -249,6 +249,23 @@ footer {
   }
 }
 
-@media only screen and (min-width: 1240px) {
+@media only screen and (max-width: 400px) {
+  
+  .name-header {
+    padding-right: 26px;
+  }
+
+  h1.name, h1.web-dev{
+    font-size: 1em;
+  }
 
 }
+
+@media only screen and (max-width: 300px) {
+
+  h1.name, h1.web-dev{
+    font-size: .5em;
+  }
+
+}
+
