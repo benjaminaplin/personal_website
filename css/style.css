@@ -256,15 +256,20 @@ footer {
   }
 
   h1.name, h1.web-dev{
-    font-size: 1em;
+    font-size: 1.1em;
   }
 
 }
 
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 315px) {
+
+  .name-header {
+    height: 100%;
+    overflow: hidden;
+  }
 
   h1.name, h1.web-dev{
-    font-size: .5em;
+    font-size: 1.11em;
   }
 
 }
