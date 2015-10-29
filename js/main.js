@@ -1,36 +1,33 @@
-console.log("rock 'n rollll")
-
-// Setting up an array of awesome song lyrics
-songLines = [
-"JAVASCRIPT",
-"HTML5/CSS",
-"Node",
-"Ruby on Rails",
-"D3.js",
-"Backbone.js",
-"MongoDB",
-"PostgreSQL"
+skills = [
+  "Javascript",
+  "HTML5/CSS",
+  "Node",
+  "Ruby on Rails",
+  "D3.js",
+  "Backbone.js",
+  "MongoDB",
+  "PostgreSQL",
+  "WEB DEVELOPER"
 ]
 
-// Setting our incrementor to start at zero OUTSIDE of the code that will be repeated
+
 var i = 0;
+var repeatMarqueeText = function repeatMarqueeText () {
 
-// Defining the behavior we want repeated 
-var repeatedBehavior = function repeatedBehavior () {
+  if (i < skills.length) {
+    $('.web-dev').addClass('animated bounceInDown')
+    $('.web-dev').text("").text(skills[i])
+        $('.web-dev').addClass('animated bounceInDown')
 
-  if (i < songLines.length) {
-    $('.web-dev').text("").text(songLines[i]);
-    // Increment our counter
-    i = i + 1;
-  } else if (i === songLines.length) {
-    // If we've reached the end of the array, clear the there interval
-    clearInterval(intervalId);
+    i++;
   }
-
+  if (i === skills.length) {
+    i = 0;
+  }
 }
 
 // Starting the interval going and grabbing the interval's ID from setInterval's return value
-var intervalId = setInterval(repeatedBehavior, 2000);
+var intervalId = setInterval(repeatMarqueeText, 1000);
 
 
 /* Morning Example:
