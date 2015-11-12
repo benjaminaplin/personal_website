@@ -4,8 +4,7 @@ h4 {
 
 #banner img{
   opacity: 0.6;
-  z-index: -12;
-
+  z-index: -1;
 }
 
 .name-header{
@@ -27,6 +26,15 @@ h4 {
 
 .name {
   color: black;
+}
+
+#eventr-modal{
+  display: none;
+      position: absolute;
+    display: none;
+    top: 50px;
+    padding: 0px 15px 15px 82px;
+    text-align: center;
 }
 
 a img {
