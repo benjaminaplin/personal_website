@@ -29,10 +29,6 @@ h4 {
   color: black;
 }
 
-div.large-4:nth-child(5) h5 {
-  padding-bottom: 15px;
-}
-
 a img {
   margin-bottom: 15px;
 }
@@ -147,6 +143,16 @@ footer {
 
 #about {
   padding-top: 10px;
+}
+
+#eventr-guest {
+  color:grey;
+  font-size: 0.8em;
+}
+
+.sub-head {
+ font-size: 1em;
+ color: #666666;
 }
 
 /*MIN-WIDTH: "If [device width] is greater than or equal to [specified #], then do {...}" */
