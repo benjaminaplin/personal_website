@@ -28,17 +28,33 @@ h4 {
   color: black;
 }
 
-#eventr-modal{
-  display: none;
-  position: absolute;
-  display: none;
-  top: 50px;
-  padding: 0px 15px 15px 82px;
-  text-align: center;
+figcaption {
+  opacity: 0;
+  z-index: 100;
 }
 
-img#eventr:hover {
+div.eventr {
+  display: table;
+}
+
+p#eventr-modal-text {
+  opacity: 0;
+  position: absolute;
+  top: 50px;
+  left: 100px;
+  color: #148DB8;
+  font-size: 1.1em;
+  z-index: 100;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+div.eventr:hover img#eventr{
   opacity: 0.3;
+}
+
+div.eventr:hover p#eventr-modal-text {
+  opacity: 1;
 }
 
 a img {
@@ -229,8 +245,7 @@ footer {
 
   .name-header{
     margin: 0 auto;
-        text-align: center;
-
+    text-align: center;
   }
   
   span.name, span.web-dev{
